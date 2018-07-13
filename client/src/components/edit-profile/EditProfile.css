@@ -1,0 +1,38 @@
+.photo-btns {
+  /* 
+  position: absolute;
+  transform: translate(20%, 450%);
+  -ms-transform: translate(-100%, -100%);
+  padding: 5px;
+  border-radius: 0px;
+  */
+  text-align: center;
+}
+
+.photo-btn {
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-1 {
+  left: 3%;
+}
+
+.btn-2 {
+  right: 3%;
+}
+
+.photo-btn:hover {
+  opacity: 1;
+}
+/* 
+*/
+
+.upload-group {
+  transition: 0.3s;
+}
+
+#fileUpload {
+  display: none;
+}

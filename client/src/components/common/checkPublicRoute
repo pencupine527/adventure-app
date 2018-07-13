@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import axios from 'axios';
+
+import { logoutUser } from '../../authJS';
+
+const checkPublicRoute = history => {
+  axios
+    .get('/api/auth')
+    .then(res => {
+      if (res.data.error) {
+        if (res.data.error === 'Token expired') {
+          console.log('Unauthorized. Token expired status 200');
+          logoutUser();
+        }
+      }
+    })
+    .catch(err => {
+      console.log('Unauthorized. Token expired');
+      //logoutUser();
+    });
+};
+
+export default checkPublicRoute;
