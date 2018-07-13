@@ -10,14 +10,11 @@ import store from '../../store';
 
 import Spinner from './Spinner';
 
-import { refreshToken } from '../../redux-mod/actions/authActions';
 import {
   LOGOUT_USER,
   AUTH_USER,
   GET_PROFILE
 } from '../../redux-mod/actions/types';
-import { clearCurrentProfile } from '../../redux-mod/actions/profileActions';
-import { logoutUser } from '../../authJS';
 
 import { PURGE } from 'redux-persist';
 

@@ -17,7 +17,6 @@ import isEmpty from '../common/is-empty';
 import formatDate from '../common/formatDate';
 
 import ImageView from './ImageView';
-import Cropper3 from '../common/cropper/Cropper3';
 import ImgDropAndCrop from '../common/photoUpload/ImgDropAndCrop';
 
 import './EditProfile.css';
