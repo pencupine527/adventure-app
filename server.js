@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
+const path = require('path');
 
 const app = express();
 
@@ -41,6 +42,16 @@ app.use('/api/users', users);
 app.use('/api/posts', posts);
 app.use('/api/profiles', profiles);
 app.use('/api/auth', auth);
+
+// Server static assets if in production
+if (process.env.MODE_ENV === 'production') {
+  // Set Static folder
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 // Server port value
 const port = process.env.PORT || 5000;
