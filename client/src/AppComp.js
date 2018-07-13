@@ -14,21 +14,12 @@ import Profile from './components/profile/Profile';
 import CreateProfile from './components/create-profile/CreateProfile';
 import EditProfile from './components/edit-profile/EditProfile';
 
-import PrivateRoute from './components/common/PrivateRoute';
 import CheckAuth from './components/common/CheckAuth';
 
 import store from './store';
 
-import { AUTH_USER } from './redux-mod/actions/types';
+import config from './config/keys';
 
-var config = {
-  apiKey: 'AIzaSyBoa9XgHnxsKyGDmoafEexdtWELm2R-gIA',
-  authDomain: 'fs-database-adven-app.firebaseapp.com',
-  databaseURL: 'https://fs-database-adven-app.firebaseio.com',
-  projectId: 'fs-database-adven-app',
-  storageBucket: 'fs-database-adven-app.appspot.com',
-  messagingSenderId: '218597672148'
-};
 firebase.initializeApp(config);
 
 // To set up a required pattern in
