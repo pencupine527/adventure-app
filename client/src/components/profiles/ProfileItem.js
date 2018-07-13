@@ -14,6 +14,7 @@ class ProfileItem extends Component {
                 <img
                   src={profile.photoURL}
                   style={{ width: '40px', height: '40px' }}
+                  alt={profile.uid}
                 />
               </div>
               <div className="col-md-8 col-8 text-black-50">
@@ -39,12 +40,3 @@ ProfileItem.PropTypes = {
 };
 
 export default ProfileItem;
-
-// className="box"
-{
-  /* <div>
-            <Link to={`/profile`} className="btn btn-light">
-              <i className="fas fa-chevron-circle-right" />
-            </Link>
-          </div> */
-}

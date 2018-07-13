@@ -1,4 +1,4 @@
-import { AUTH_USER, LOGOUT_USER } from './types';
+import { AUTH_USER } from './types';
 import { logoutUser } from '../../authJS';
 import axios from 'axios';
 import setAuthToken from '../../utils/setAuthToken';

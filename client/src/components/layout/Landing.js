@@ -10,10 +10,6 @@ class Landing extends Component {
       this.props.history.push('/dashboard');
     }
 
-    // For creating some space for the display
-    const blankSpace = {
-      padding: '5%'
-    };
     return (
       <div>
         <div className="landing">

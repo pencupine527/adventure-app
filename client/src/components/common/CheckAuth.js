@@ -10,12 +10,6 @@ import store from '../../store';
 
 import Spinner from './Spinner';
 
-import {
-  LOGOUT_USER,
-  AUTH_USER,
-  GET_PROFILE
-} from '../../redux-mod/actions/types';
-
 import { PURGE } from 'redux-persist';
 
 class CheckAuth extends Component {

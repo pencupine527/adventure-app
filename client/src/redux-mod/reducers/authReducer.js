@@ -1,4 +1,4 @@
-import { AUTH_USER, LOGOUT_USER } from '../actions/types';
+import { AUTH_USER } from '../actions/types';
 
 import { PURGE } from 'redux-persist';
 
@@ -23,14 +23,6 @@ export default function(state = initialState, action) {
     case PURGE:
       console.log('PURGIN!!!');
       return initialState;
-    // case LOGOUT_USER:
-    //   localStorage.removeItem('idToken');
-    //   logoutUser();
-    //   return {
-    //     ...state,
-    //     isAuthenticated: false,
-    //     user: {}
-    //   };
     default:
       return state;
   }

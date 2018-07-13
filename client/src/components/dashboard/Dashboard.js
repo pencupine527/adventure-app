@@ -19,11 +19,6 @@ class Dashboard extends Component {
   }
 
   render() {
-    // For creating some space for the display
-    const blankSpace = {
-      padding: '10%'
-    };
-
     //console.log(checkAuth());
 
     const { user } = this.props.auth;
@@ -61,7 +56,7 @@ class Dashboard extends Component {
 
     return (
       <div className="register">
-        <div style={{ padding: '2%' }} />
+        <div style={{ padding: '5%' }} />
 
         <div className="container">
           <div className="row">
@@ -76,7 +71,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-        <div style={{ padding: '2%' }} />
+        <div style={{ padding: '5%' }} />
       </div>
     );
   }

@@ -183,11 +183,6 @@ class EditProfile extends Component {
   }
 
   render() {
-    // For creating some space for the display
-    const blankSpace = {
-      padding: '10%'
-    };
-
     console.log('rendering');
     const { errors, displaySocialInputs } = this.state;
     //const { auth } = this.props;
@@ -334,7 +329,7 @@ class EditProfile extends Component {
                             <div
                               className="progress-bar"
                               role="progressbar"
-                              aria-valuenow={`${this.state.uploadProgress}`}
+                              aria-valuenow={this.state.uploadProgress}
                               aria-valuemin="0"
                               aria-valuemax="100"
                             >

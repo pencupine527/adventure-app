@@ -17,7 +17,7 @@ class Navbar extends Component {
     console.log('click');
   }
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
     const { profile } = this.props.profile;
 
     const profileLinks = !isEmpty(profile) ? (

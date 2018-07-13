@@ -8,7 +8,7 @@ import './FriendBoard.css';
 
 class FriendBoard extends Component {
   render() {
-    const { profile, profiles } = this.props.profile;
+    const { profiles } = this.props.profile;
 
     return (
       <div>

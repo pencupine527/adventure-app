@@ -211,7 +211,6 @@ class CreateProfile extends Component {
                               : this.props.auth.user.data.photoURL
                             : this.state.photoURL
                         }
-                        alt="Profile Photo"
                         className="img-thumbnail rounded float-left mx-auto"
                         style={{ width: '200px', marginBottom: '15px' }}
                       />
