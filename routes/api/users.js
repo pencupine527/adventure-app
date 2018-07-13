@@ -6,7 +6,6 @@ const authCheck = require('../../auth-modules/authCheck');
 
 // Load Input Validators
 const validateRegisterInput = require('../../validation/register');
-const validateLoginInput = require('../../validation/login');
 
 const keys = require('../../config/keys');
 
