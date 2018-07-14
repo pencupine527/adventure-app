@@ -21,12 +21,12 @@ import store from './store';
 //import config from './config/keys';
 
 var config = {
-  apiKey: 'AIzaSyBFgtd7GXypzezDgzpWBWvcrrypVROjoyE',
-  authDomain: 'deployed-adventursome-1.firebaseapp.com',
-  databaseURL: 'https://deployed-adventursome-1.firebaseio.com',
-  projectId: 'deployed-adventursome-1',
-  storageBucket: 'deployed-adventursome-1.appspot.com',
-  messagingSenderId: '292188550214'
+  apiKey: 'AIzaSyBoa9XgHnxsKyGDmoafEexdtWELm2R-gIA',
+  authDomain: 'fs-database-adven-app.firebaseapp.com',
+  databaseURL: 'https://fs-database-adven-app.firebaseio.com',
+  projectId: 'fs-database-adven-app',
+  storageBucket: 'fs-database-adven-app.appspot.com',
+  messagingSenderId: '218597672148'
 };
 
 firebase.initializeApp(config);
