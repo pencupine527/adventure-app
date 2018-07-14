@@ -12,6 +12,8 @@ import {
   GET_PROFILES
 } from './types';
 
+// PORFILE ACTIONS
+
 // Get current profile
 export const getCurrentProfile = () => dispatch => {
   setAuthToken();
