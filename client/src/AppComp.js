@@ -21,7 +21,7 @@ import store from './store';
 //import config from './config/keys';
 
 const config = {
-  apiKey: process.env.APIKEY,
+  apiKey: AIzaSyBFgtd7GXypzezDgzpWBWvcrrypVROjoyE,
   authDomain: process.env.AUTH_DOMAIN,
   databaseURL: process.env.DATABASE_URL,
   projectId: process.env.PROJECT_ID,
